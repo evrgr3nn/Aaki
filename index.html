@@ -116,6 +116,7 @@
                     <a href="https://us.princesspolly.com/" target="_blank">Princesspolly</a><br />
                     <a href="https://jsu.instructure.com/" target="_blank">Study Time</a>
                     <a href="https://theflixertv.to/" target="_blank">Movie</a>
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
                 </div>
             </div>
         </section>
@@ -160,7 +161,8 @@
             }
         }
         function submitSuggestion() {
-            const suggestion = document.getElementById('suggestion').value;
+            var suggestion = document.getElementById('suggestion').value;
+            console.log("Suggestion submitted:", suggestion)
             if (suggestion.trim() !== '') {
                 alert('Thank you for your suggestion: ' + suggestion);
                 // Clear the suggestion box after submission
