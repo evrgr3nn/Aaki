@@ -163,6 +163,7 @@
         function submitSuggestion() {
             var suggestion = document.getElementById('suggestion').value;
             console.log("Suggestion submitted:", suggestion)
+            document.getElementById("suggestion").value = "";
             if (suggestion.trim() !== '') {
                 alert('Thank you for your suggestion: ' + suggestion);
                 // Clear the suggestion box after submission
